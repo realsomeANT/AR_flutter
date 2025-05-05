@@ -123,13 +123,3 @@ class _ARViewScreenState extends State<ARViewScreen> {
     await arObjectManager?.addNode(node);
   }
 }
-
-// If you still get "Undefined class 'ARSessionManager'", it means:
-// 1. The ar_flutter_plugin package is not installed or not the correct version.
-// 2. Run `flutter pub get` in your project directory.
-// 3. Ensure your pubspec.yaml contains:
-/// 
-/// dependencies:
-///   ar_flutter_plugin: ^0.7.3
-/// 
-// 4. If you are using a different version, check the plugin documentation for class names and usage.
