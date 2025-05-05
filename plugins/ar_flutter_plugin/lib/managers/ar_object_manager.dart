@@ -109,7 +109,7 @@ class ARObjectManager {
           }
       }
     } catch (e) {
-      print('Error caught: ' + e.toString());
+      print('Error caught: $e');
     }
     return Future.value();
   }
@@ -136,7 +136,7 @@ class ARObjectManager {
       } else {
         return await _channel.invokeMethod<bool>('addNode', node.toMap());
       }
-    } on PlatformException catch (e) {
+    } on PlatformException {
       return false;
     }
   }

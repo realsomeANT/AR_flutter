@@ -142,7 +142,7 @@ class ARView extends StatefulWidget {
   /// Configures whether or not to display the device's platform type above the AR view. Defaults to false
   final bool showPlatformType;
 
-  ARView(
+  const ARView(
       {Key? key,
       required this.onARViewCreated,
       this.planeDetectionConfig = PlaneDetectionConfig.none,
@@ -155,11 +155,11 @@ class ARView extends StatefulWidget {
       : super(key: key);
   @override
   _ARViewState createState() => _ARViewState(
-      showPlatformType: this.showPlatformType,
-      permissionPromptDescription: this.permissionPromptDescription,
-      permissionPromptButtonText: this.permissionPromptButtonText,
+      showPlatformType: showPlatformType,
+      permissionPromptDescription: permissionPromptDescription,
+      permissionPromptButtonText: permissionPromptButtonText,
       permissionPromptParentalRestriction:
-          this.permissionPromptParentalRestriction);
+          permissionPromptParentalRestriction);
 }
 
 class _ARViewState extends State<ARView> {

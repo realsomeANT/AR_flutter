@@ -45,7 +45,7 @@ class ARPlaneAnchor extends ARAnchor {
     String? cloudanchorid,
     int? ttl,
   })  : childNodes = childNodes ?? [],
-        cloudanchorid = cloudanchorid ?? null,
+        cloudanchorid = cloudanchorid,
         ttl = ttl ?? 1,
         super(
             type: AnchorType.plane, transformation: transformation, name: name);
