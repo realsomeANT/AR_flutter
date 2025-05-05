@@ -1,20 +1,20 @@
-E/ModelRenderable(31050): Unable to load Renderable registryId='flutter_assets/assets/gundumhandfinish.glb'
-E/ModelRenderable(31050): java.util.concurrent.CompletionException: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 21
-E/ModelRenderable(31050): 	at com.google.ar.sceneform.utilities.SceneformBufferUtils.inputStreamToByteBuffer(SourceFile:48)
-E/ModelRenderable(31050): 	at com.google.ar.sceneform.rendering.LoadRenderableFromSfbTask.lambda$downloadAndProcessRenderable$0$com-google-ar-sceneform-rendering-LoadRenderableFromSfbTask(LoadRenderableFromSfbTask.java:118)
-E/ModelRenderable(31050): 	at com.google.ar.sceneform.rendering.LoadRenderableFromSfbTask$$ExternalSyntheticLambda4.get(D8$$SyntheticClass:0)
-E/ModelRenderable(31050): 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1744)
-E/ModelRenderable(31050): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-E/ModelRenderable(31050): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
-E/ModelRenderable(31050): 	at java.lang.Thread.run(Thread.java:1012)
-E/ModelRenderable(31050): Caused by: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 21
-E/ModelRenderable(31050): 	at android.util.JsonReader.syntaxError(JsonReader.java:1163)
-E/ModelRenderable(31050): 	at android.util.JsonReader.checkLenient(JsonReader.java:841)
-E/ModelRenderable(31050): 	at android.util.JsonReader.readLiteral(JsonReader.java:1063)
-E/ModelRenderable(31050): 	at android.util.JsonReader.nextValue(JsonReader.java:716)
-E/ModelRenderable(31050): 	at android.util.JsonReader.peek(JsonReader.java:337)
-E/ModelRenderable(31050): 	at com.google.ar.sceneform.assets.RenderableSource.call(Unknown Source:77)
-E/ModelRenderable(31050): 	at com.google.ar.sceneform.assets.RenderableSource.call(Unknown Source:0)
-E/ModelRenderable(31050): 	at com.google.ar.sceneform.utilities.SceneformBufferUtils.inputStreamToByteBuffer(SourceFile:42)
-E/ModelRenderable(31050): 	... 6 more
-I/flutter (31050): [Unable to load renderableassets/gundumhandfinish.glb]
+/ModelRenderable( 8838): Unable to load Renderable registryId='flutter_assets/assets/Box.glb'
+E/ModelRenderable( 8838): java.util.concurrent.CompletionException: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 21
+E/ModelRenderable( 8838): 	at com.google.ar.sceneform.utilities.SceneformBufferUtils.inputStreamToByteBuffer(SourceFile:48)
+E/ModelRenderable( 8838): 	at com.google.ar.sceneform.rendering.LoadRenderableFromSfbTask.lambda$downloadAndProcessRenderable$0$com-google-ar-sceneform-rendering-LoadRenderableFromSfbTask(LoadRenderableFromSfbTask.java:118)
+E/ModelRenderable( 8838): 	at com.google.ar.sceneform.rendering.LoadRenderableFromSfbTask$$ExternalSyntheticLambda4.get(D8$$SyntheticClass:0)
+E/ModelRenderable( 8838): 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1744)
+E/ModelRenderable( 8838): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/ModelRenderable( 8838): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/ModelRenderable( 8838): 	at java.lang.Thread.run(Thread.java:1012)
+E/ModelRenderable( 8838): Caused by: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 21
+E/ModelRenderable( 8838): 	at android.util.JsonReader.syntaxError(JsonReader.java:1163)
+E/ModelRenderable( 8838): 	at android.util.JsonReader.checkLenient(JsonReader.java:841)
+E/ModelRenderable( 8838): 	at android.util.JsonReader.readLiteral(JsonReader.java:1063)
+E/ModelRenderable( 8838): 	at android.util.JsonReader.nextValue(JsonReader.java:716)
+E/ModelRenderable( 8838): 	at android.util.JsonReader.peek(JsonReader.java:337)
+E/ModelRenderable( 8838): 	at com.google.ar.sceneform.assets.RenderableSource.call(Unknown Source:77)
+E/ModelRenderable( 8838): 	at com.google.ar.sceneform.assets.RenderableSource.call(Unknown Source:0)
+E/ModelRenderable( 8838): 	at com.google.ar.sceneform.utilities.SceneformBufferUtils.inputStreamToByteBuffer(SourceFile:42)
+E/ModelRenderable( 8838): 	... 6 more
+I/flutter ( 8838): [Unable to load renderableassets/Box.glb]
