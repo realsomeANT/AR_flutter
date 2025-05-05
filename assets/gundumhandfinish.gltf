@@ -1,0 +1,105 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.43",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Scanfoot"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "green",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.004181351512670517,
+                    0.2369893193244934,
+                    0,
+                    1
+                ],
+                "metallicFactor" : 0.5092592239379883,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Scanfoot",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 38608,
+            "max" : [
+                0.10312779247760773,
+                0.5080583095550537,
+                0.32945939898490906
+            ],
+            "min" : [
+                -0.16719169914722443,
+                0.004553854465484619,
+                -0.32803624868392944
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 38608,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 57912,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 463296,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 463296,
+            "byteOffset" : 463296
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 115824,
+            "byteOffset" : 926592
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1042416,
+            "uri" : "gundumhandfinish.bin"
+        }
+    ]
+}

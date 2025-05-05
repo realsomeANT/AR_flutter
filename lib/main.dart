@@ -115,7 +115,7 @@ class _ARViewScreenState extends State<ARViewScreen> {
 
     final node = ARNode(
       type: NodeType.localGLTF2,
-      uri: "assets/Box.glb", // Change to your model path
+      uri: "assets/gundumhandfinish.gltf", // เปลี่ยนเป็นโมเดล gundumhandfinish.gltf
       scale: vector_math.Vector3(0.5, 0.5, 0.5),
       position: position,
       rotation: rotation,
