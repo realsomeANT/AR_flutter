@@ -145,7 +145,7 @@ class _ARViewScreenState extends State<ARViewScreen> {
     final node = ARNode(
       type: NodeType.localGLTF2,
       uri: selectedModel, // ใช้โมเดลที่เลือก
-      scale: vector_math.Vector3(0.5, 0.5, 0.5),
+      scale: vector_math.Vector3(0.35, 0.35, 0.35),
       position: position,
       rotation: rotation,
     );
