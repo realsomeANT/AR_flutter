@@ -92,6 +92,15 @@ flutter:
   # see https://flutter.dev/to/font-from-package
   assets:
     - assets/Box.glb
-    - assets/gundumhandfinish.glb
     - assets/gundumhandfinish.gltf
     - assets/gundumhandfinish.bin
+    - assets/Giant.bin
+    - assets/Giant.gltf
+    - assets/MagicStaff.bin
+    - assets/MagicStaff.gltf
+    - assets/Chest.bin
+    - assets/Chest.gltf
+    - assets/Car.bin
+    - assets/Boat.gltf
+    - assets/Car.gltf
+    - assets/Boat.bin

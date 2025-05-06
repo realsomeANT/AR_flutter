@@ -11,16 +11,6 @@ import 'package:ar_flutter_plugin/models/ar_node.dart';
 import 'package:ar_flutter_plugin/models/ar_hittest_result.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-// If you still get "Undefined class 'ARSessionManager'", do the following:
-// 1. Make sure you have run `flutter pub get` after adding ar_flutter_plugin to pubspec.yaml.
-// 2. Clean your build: run `flutter clean` then `flutter pub get`.
-// 3. Restart your IDE/editor to refresh code analysis.
-// 4. If you are using a custom IDE, ensure it is not using an old Dart analysis cache.
-// 5. If the problem persists, try running `flutter pub upgrade` to update all dependencies.
-
-// The class ARSessionManager is defined in ar_flutter_plugin >=0.7.0.
-// If you still see this error, check your pubspec.yaml and pubspec.lock to confirm the correct version is installed.
-
 void main() {
   runApp(const MyApp());
 }
@@ -51,6 +41,19 @@ class _ARViewScreenState extends State<ARViewScreen> {
   ARSessionManager? arSessionManager;
   ARObjectManager? arObjectManager;
 
+  // เพิ่มตัวแปรสำหรับเก็บ path ของโมเดลที่เลือก
+  String selectedModel = "assets/gundumhandfinish.gltf";
+
+  // รายชื่อโมเดลที่เลือกได้
+  final List<String> modelList = [
+    "assets/Giant.gltf",
+    "assets/MagicStaff.gltf",
+    "assets/Chest.gltf",
+    "assets/Boat.gltf",
+    "assets/Car.gltf",
+    "assets/gundumhandfinish.gltf",
+  ];
+
   @override
   void initState() {
     super.initState();
@@ -75,7 +78,33 @@ class _ARViewScreenState extends State<ARViewScreen> {
         onARViewCreated: onARViewCreated,
         planeDetectionConfig: PlaneDetectionConfig.horizontal,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _showModelSelectionDialog,
+        child: const Icon(Icons.view_in_ar),
+      ),
     );
+  }
+
+  void _showModelSelectionDialog() async {
+    final result = await showDialog<String>(
+      context: context,
+      builder: (context) {
+        return SimpleDialog(
+          title: const Text('เลือกโมเดล 3D'),
+          children: modelList.map((model) {
+            return SimpleDialogOption(
+              onPressed: () => Navigator.pop(context, model),
+              child: Text(model.split('/').last),
+            );
+          }).toList(),
+        );
+      },
+    );
+    if (result != null) {
+      setState(() {
+        selectedModel = result;
+      });
+    }
   }
 
   void onARViewCreated(
@@ -115,8 +144,8 @@ class _ARViewScreenState extends State<ARViewScreen> {
 
     final node = ARNode(
       type: NodeType.localGLTF2,
-      uri: "assets/gundumhandfinish.gltf", // เปลี่ยนเป็นโมเดล gundumhandfinish.gltf
-      scale: vector_math.Vector3(0.5, 0.5, 0.5),
+      uri: selectedModel, // ใช้โมเดลที่เลือก
+      scale: vector_math.Vector3(0.1, 0.1, 0.1),
       position: position,
       rotation: rotation,
     );
