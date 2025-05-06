@@ -15,13 +15,23 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "chest1_pCube11"
+            "name" : "chest1_pCube11",
+            "scale" : [
+                0.07106608897447586,
+                0.07106608897447586,
+                0.07106608897447586
+            ],
+            "translation" : [
+                -6.088549613952637,
+                -0.05469168722629547,
+                0
+            ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Material.013",
+            "name" : "Material.024",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.0652940571308136,
@@ -35,7 +45,7 @@
         },
         {
             "doubleSided" : true,
-            "name" : "Material.014",
+            "name" : "Material.025",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.8000000715255737,
@@ -50,7 +60,7 @@
     ],
     "meshes" : [
         {
-            "name" : "chest1_pCube11",
+            "name" : "chest1_pCube11.002",
             "primitives" : [
                 {
                     "attributes" : {
