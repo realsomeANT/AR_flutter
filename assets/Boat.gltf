@@ -15,13 +15,23 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Boat1_pCube26"
+            "name" : "Boat1_pCube26",
+            "scale" : [
+                0.20323866605758667,
+                0.20323866605758667,
+                0.20323866605758667
+            ],
+            "translation" : [
+                4.0967183113098145,
+                0,
+                0
+            ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Material.017",
+            "name" : "Material.020",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.3362935781478882,
@@ -36,7 +46,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Boat1_pCube26.001",
+            "name" : "Boat1_pCube26.002",
             "primitives" : [
                 {
                     "attributes" : {

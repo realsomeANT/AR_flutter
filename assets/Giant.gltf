@@ -8,35 +8,30 @@
         {
             "name" : "Scene",
             "nodes" : [
-                2
+                0
             ]
         }
     ],
     "nodes" : [
         {
-            "name" : "default"
-        },
-        {
             "mesh" : 0,
             "name" : "Giant",
             "scale" : [
-                0.09749390929937363,
-                0.09749390929937363,
-                0.09749390929937363
-            ]
-        },
-        {
-            "children" : [
-                0,
-                1
+                0.01477031409740448,
+                0.01477031409740448,
+                0.01477031409740448
             ],
-            "name" : "Giant.obj"
+            "translation" : [
+                -1.923482894897461,
+                0,
+                0
+            ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Material.009",
+            "name" : "Material.026",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.8000000715255737,
@@ -51,7 +46,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Giant.001",
+            "name" : "Giant.003",
             "primitives" : [
                 {
                     "attributes" : {

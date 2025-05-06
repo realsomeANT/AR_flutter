@@ -3,48 +3,35 @@
         "generator" : "Khronos glTF Blender I/O v3.2.43",
         "version" : "2.0"
     },
-    "extensionsUsed" : [
-        "KHR_materials_transmission"
-    ],
     "scene" : 0,
     "scenes" : [
         {
             "name" : "Scene",
             "nodes" : [
-                1,
-                4
+                0
             ]
         }
     ],
     "nodes" : [
         {
-            "name" : "default.001"
-        },
-        {
-            "children" : [
-                0
-            ],
-            "name" : "MagicStaff.obj"
-        },
-        {
             "mesh" : 0,
-            "name" : "Car1_pCylinder2"
-        },
-        {
-            "name" : "default.002"
-        },
-        {
-            "children" : [
-                2,
-                3
+            "name" : "Car1_pCylinder2",
+            "scale" : [
+                0.26811206340789795,
+                0.26811206340789795,
+                0.26811206340789795
             ],
-            "name" : "Car.obj"
+            "translation" : [
+                8.02967643737793,
+                0,
+                0
+            ]
         }
     ],
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Material.006",
+            "name" : "Material.021",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0,
@@ -58,7 +45,7 @@
         },
         {
             "doubleSided" : true,
-            "name" : "Material.007",
+            "name" : "Material.022",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.8000000715255737,
@@ -72,12 +59,7 @@
         },
         {
             "doubleSided" : true,
-            "extensions" : {
-                "KHR_materials_transmission" : {
-                    "transmissionFactor" : 0.20183485746383667
-                }
-            },
-            "name" : "Material.008",
+            "name" : "Material.023",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
                     0.37929511070251465,
@@ -92,7 +74,7 @@
     ],
     "meshes" : [
         {
-            "name" : "Car1_pCylinder2.001",
+            "name" : "Car1_pCylinder2.003",
             "primitives" : [
                 {
                     "attributes" : {
